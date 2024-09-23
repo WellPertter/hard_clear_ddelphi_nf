@@ -1,0 +1,12 @@
+unit untMainControlInterfacesCleanCode;
+
+interface
+
+type
+  iNotaFiscal = interface
+  ['{691DB52A-77A4-4DB9-8924-5164F89BC1C3}']
+  end;
+
+implementation
+
+end.

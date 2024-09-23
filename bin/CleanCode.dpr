@@ -3,7 +3,9 @@ program CleanCode;
 uses
   System.StartUpCopy,
   FMX.Forms,
-  untMainCleanCode in '..\src\view\untMainCleanCode.pas' {Form1};
+  untMainCleanCode in '..\src\view\untMainCleanCode.pas' {Form1},
+  untMainControlCleanCode in '..\src\control\untMainControlCleanCode.pas',
+  untMainControlInterfacesCleanCode in '..\src\control\untMainControlInterfacesCleanCode.pas';
 
 {$R *.res}
 
