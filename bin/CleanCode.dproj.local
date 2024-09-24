@@ -3,13 +3,28 @@
 	<Transactions>
     <Transaction>2024/09/21 19:51:07.000.392,=C:\Users\José Arthur\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2024/09/23 16:11:45.000.192,=C:\Users\José Arthur\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2024/09/23 16:12:07.000.602,C:\Users\José Arthur\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\Users\José Arthur\Desktop\Hard Mode(Delphi)\src\view\untMainCleanCode.fmx</Transaction>
-    <Transaction>2024/09/23 16:12:07.000.602,C:\Users\José Arthur\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\José Arthur\Desktop\Hard Mode(Delphi)\src\view\untMainCleanCode.pas</Transaction>
-    <Transaction>2024/09/23 16:12:18.000.820,C:\Users\José Arthur\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\José Arthur\Desktop\Hard Mode(Delphi)\bin\CleanCode.dproj</Transaction>
-    <Transaction>2024/09/23 17:30:03.485,=C:\Users\José Arthur\Desktop\hard_clear_ddelphi_nf\bin\Unit1.pas</Transaction>
-    <Transaction>2024/09/23 17:30:21.534,=C:\Users\José Arthur\Desktop\hard_clear_ddelphi_nf\bin\Unit1.pas</Transaction>
-    <Transaction>2024/09/23 17:31:28.651,C:\Users\José Arthur\Desktop\hard_clear_ddelphi_nf\src\control\untMainControlCleanCode.pas=C:\Users\José Arthur\Desktop\hard_clear_ddelphi_nf\bin\Unit1.pas</Transaction>
-    <Transaction>2024/09/23 19:50:15.886,=C:\Users\José Arthur\Desktop\hard_clear_ddelphi_nf\bin\Unit1.pas</Transaction>
-    <Transaction>2024/09/23 19:50:50.842,C:\Users\José Arthur\Desktop\hard_clear_ddelphi_nf\src\control\untMainControlInterfacesCleanCode.pas=C:\Users\José Arthur\Desktop\hard_clear_ddelphi_nf\bin\Unit1.pas</Transaction>
+    <Transaction>2024/09/23 16:12:07.000.602,C:\Users\José Arthur\Desktop\Hard Mode(Delphi)\src\view\untMainCleanCode.fmx=C:\Users\José Arthur\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2024/09/23 16:12:07.000.602,C:\Users\José Arthur\Desktop\Hard Mode(Delphi)\src\view\untMainCleanCode.pas=C:\Users\José Arthur\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/09/23 16:12:18.000.820,C:\Users\José Arthur\Desktop\Hard Mode(Delphi)\bin\CleanCode.dproj=C:\Users\José Arthur\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2024/09/23 17:30:03.000.485,=C:\Users\José Arthur\Desktop\hard_clear_ddelphi_nf\bin\Unit1.pas</Transaction>
+    <Transaction>2024/09/23 17:30:21.000.534,=C:\Users\José Arthur\Desktop\hard_clear_ddelphi_nf\bin\Unit1.pas</Transaction>
+    <Transaction>2024/09/23 17:31:28.000.651,C:\Users\José Arthur\Desktop\hard_clear_ddelphi_nf\bin\Unit1.pas=C:\Users\José Arthur\Desktop\hard_clear_ddelphi_nf\src\control\untMainControlCleanCode.pas</Transaction>
+    <Transaction>2024/09/23 19:50:15.000.886,=C:\Users\José Arthur\Desktop\hard_clear_ddelphi_nf\bin\Unit1.pas</Transaction>
+    <Transaction>2024/09/23 19:50:50.000.842,C:\Users\José Arthur\Desktop\hard_clear_ddelphi_nf\bin\Unit1.pas=C:\Users\José Arthur\Desktop\hard_clear_ddelphi_nf\src\control\untMainControlInterfacesCleanCode.pas</Transaction>
+    <Transaction>2024/09/24 13:14:16.929,=D:\Arthur\hard_clear_ddelphi_nf\bin\Unit1.pas</Transaction>
+    <Transaction>2024/09/24 13:15:32.301,D:\Arthur\hard_clear_ddelphi_nf\src\control\untMainControlCleanCode.Criar.pas=D:\Arthur\hard_clear_ddelphi_nf\bin\Unit1.pas</Transaction>
+    <Transaction>2024/09/24 13:35:08.546,=D:\Arthur\hard_clear_ddelphi_nf\bin\Unit1.pas</Transaction>
+    <Transaction>2024/09/24 13:35:35.686,=D:\Arthur\hard_clear_ddelphi_nf\bin\Unit2.pas</Transaction>
+    <Transaction>2024/09/24 13:35:54.342,D:\Arthur\hard_clear_ddelphi_nf\src\control\untMainControlCleanCode.Validar.pas=D:\Arthur\hard_clear_ddelphi_nf\bin\Unit1.pas</Transaction>
+    <Transaction>2024/09/24 13:39:22.856,=D:\Arthur\hard_clear_ddelphi_nf\bin\Unit1.pas</Transaction>
+    <Transaction>2024/09/24 13:39:40.451,D:\Arthur\hard_clear_ddelphi_nf\src\control\untMainControlCleanCode.Enviar.pas=D:\Arthur\hard_clear_ddelphi_nf\bin\Unit1.pas</Transaction>
+    <Transaction>2024/09/24 13:44:03.703,=D:\Arthur\hard_clear_ddelphi_nf\bin\Unit1.pas</Transaction>
+    <Transaction>2024/09/24 13:44:33.108,D:\Arthur\hard_clear_ddelphi_nf\src\control\untMainControlCleanCode.Gravar.pas=D:\Arthur\hard_clear_ddelphi_nf\bin\Unit1.pas</Transaction>
+    <Transaction>2024/09/24 13:45:07.963,=D:\Arthur\hard_clear_ddelphi_nf\bin\Unit1.pas</Transaction>
+    <Transaction>2024/09/24 13:45:32.983,D:\Arthur\hard_clear_ddelphi_nf\src\control\untMainControlCleanCode.Email.pas=D:\Arthur\hard_clear_ddelphi_nf\bin\Unit1.pas</Transaction>
+    <Transaction>2024/09/24 13:46:18.159,=D:\Arthur\hard_clear_ddelphi_nf\bin\Unit1.pas</Transaction>
+    <Transaction>2024/09/24 13:46:34.387,D:\Arthur\hard_clear_ddelphi_nf\src\control\untMainControlCleanCode.EnviarNotaSefaz.pas=D:\Arthur\hard_clear_ddelphi_nf\bin\Unit1.pas</Transaction>
+    <Transaction>2024/09/24 14:19:48.162,=D:\Arthur\hard_clear_ddelphi_nf\bin\Unit1.pas</Transaction>
+    <Transaction>2024/09/24 14:20:42.113,D:\Arthur\hard_clear_ddelphi_nf\src\control\untMainControlInvokerCleanCode.pas=D:\Arthur\hard_clear_ddelphi_nf\bin\Unit1.pas</Transaction>
   </Transactions>
 </BorlandProject>

@@ -6,7 +6,7 @@ uses
   untMainControlInterfacesCleanCode;
 
 type
-  TControlNotaFiscal = class(TInterfacedObject, iNotaFiscal)
+  TControlNotaFiscal = class(TInterfacedObject, iNotaFiscal, iNotaFiscalView)
   private
   public
     constructor Create;
@@ -21,6 +21,11 @@ type
   end;
 
 implementation
+
+uses
+  untMainControlInvokerCleanCode, untMainControlCleanCode.Criar,
+  untMainControlCleanCode.Validar, untMainControlCleanCode.Enviar,
+  untMainControlCleanCode.Gravar;
 
 { TControlNotaFiscal }
 
@@ -53,6 +58,11 @@ end;
 function TControlNotaFiscal.EnviarNotaSefaz: iNotaFiscal;
 begin
   Result := Self;
+  TControllerInvoker.New
+  .Add(TControllerNotaFiscalCriar.New(self))
+  .Add(TControllerNotaFiscalValidar.New(self))
+  .Add(TControllerNotaFiscalEnviar.New(self))
+  .Add(TControllerNotaFiscalGravar.New(self))
 end;
 
 function TControlNotaFiscal.Gravar: iNotaFiscal;

@@ -1,0 +1,21 @@
+unit untMainControlCleanCode.Criar;
+
+interface
+
+uses
+  untMainControlInterfacesCleanCode;
+
+type
+  TControllerNotaFiscalCriar = class(TInterfacedObject, iCommand)
+  private
+    FParent: iNotaFiscal
+  public
+    Constructor Create(Parent: iNotaFiscal);
+    destructor Destroy; override;
+    class function New(Parent: iNotaFiscal): iCommand;
+  end;
+
+
+implementation
+
+end.

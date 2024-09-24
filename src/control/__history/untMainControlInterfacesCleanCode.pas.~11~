@@ -1,0 +1,24 @@
+unit untMainControlInterfacesCleanCode;
+
+interface
+
+type
+
+  iNotaFiscal = interface
+    ['{691DB52A-77A4-4DB9-8924-5164F89BC1C3}']
+    function Criar: iNotaFiscal;
+    function Validar: iNotaFiscal;
+    function Enviar: iNotaFiscal;
+    function Gravar: iNotaFiscal;
+    function Email: iNotaFiscal;
+
+  end;
+
+  iNotaFiscalView = interface
+    ['{5B4F5AAA-E610-48DD-B118-9BF2B0CBA830}']
+    function EnviarNotaSefaz: iNotaFiscal;
+  end;
+
+implementation
+
+end.

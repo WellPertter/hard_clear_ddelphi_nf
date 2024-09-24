@@ -1,4 +1,5 @@
 Aumenta 80% a produtivdade.
+Meta: 97%
 
 - Projetar antes;
 - Cada Tab vai perdendo performacer;
@@ -7,7 +8,8 @@ Aumenta 80% a produtivdade.
 
 COMANDOS
 CRTL + SHIFT + G ( Criar o código )
-Ctrl + D          (Organizar)
+Ctrl + D         (Organizar)
+CRTL + J         ( Preencher comandos básicos )
 
 
 
