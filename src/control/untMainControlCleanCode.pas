@@ -11,13 +11,17 @@ type
   public
     constructor Create;
     destructor Destroy; override;
-    class function New: iNotaFiscal;
+    class function New: iNotaFiscalView;
     function Criar: iNotaFiscal;
     function Validar: iNotaFiscal;
     function Enviar: iNotaFiscal;
     function Gravar: iNotaFiscal;
     function Email: iNotaFiscal;
     function EnviarNotaSefaz: iNotaFiscal;
+
+    function EnviarNotaSefazSemEmail: iNotaFiscal;
+    function ImportarPedido(Value : Integer) : iNotafiscal;
+    function GerarNotaPedido(Codigo: Integer): iNotafiscal;
   end;
 
 implementation
@@ -25,7 +29,8 @@ implementation
 uses
   untMainControlInvokerCleanCode, untMainControlCleanCode.Criar,
   untMainControlCleanCode.Validar, untMainControlCleanCode.Enviar,
-  untMainControlCleanCode.Gravar;
+  untMainControlCleanCode.Gravar, untMainControlCleanCode.Email,
+  untMainControlCleanCode.ImportarPedido;
 
 { TControlNotaFiscal }
 
@@ -63,6 +68,33 @@ begin
   .Add(TControllerNotaFiscalValidar.New(self))
   .Add(TControllerNotaFiscalEnviar.New(self))
   .Add(TControllerNotaFiscalGravar.New(self))
+  .Add(TControllerNotaFiscalEmail.New(self))
+  .Execute;
+end;
+
+function TControlNotaFiscal.EnviarNotaSefazSemEmail: iNotaFiscal;
+begin
+  Result := Self;
+  TControllerInvoker.New
+  .Add(TControllerNotaFiscalCriar.New(self))
+  .Add(TControllerNotaFiscalValidar.New(self))
+  .Add(TControllerNotaFiscalEnviar.New(self))
+  .Add(TControllerNotaFiscalGravar.New(self))
+ // .Add(TControllerNotaFiscalEmail.New(self))
+  .Execute;
+end;
+
+function TControlNotaFiscal.GerarNotaPedido(Codigo: Integer): iNotafiscal;
+begin
+  Result := Self;
+  TControllerInvoker.New
+  .Add(TControllerNotaFiscalImportarPedido.New(self, Codigo))
+  .Add(TControllerNotaFiscalCriar.New(self))
+  .Add(TControllerNotaFiscalValidar.New(self))
+  .Add(TControllerNotaFiscalEnviar.New(self))
+  .Add(TControllerNotaFiscalGravar.New(self))
+  .Add(TControllerNotaFiscalEmail.New(self))
+  .Execute;
 end;
 
 function TControlNotaFiscal.Gravar: iNotaFiscal;
@@ -70,7 +102,12 @@ begin
   Result := Self;
 end;
 
-class function TControlNotaFiscal.New: iNotaFiscal;
+function TControlNotaFiscal.ImportarPedido(Value: Integer): iNotafiscal;
+begin
+  Result := Self;
+end;
+
+class function TControlNotaFiscal.New: iNotaFiscalView;
 begin
   Result := Self.Create;
 end;

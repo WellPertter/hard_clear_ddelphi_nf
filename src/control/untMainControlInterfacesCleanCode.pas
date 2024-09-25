@@ -22,11 +22,16 @@ type
     function Enviar: iNotaFiscal;
     function Gravar: iNotaFiscal;
     function Email: iNotaFiscal;
+
+    function ImportarPedido(Value : Integer) : iNotafiscal;
   end;
 
   iNotaFiscalView = interface
     ['{5B4F5AAA-E610-48DD-B118-9BF2B0CBA830}']
     function EnviarNotaSefaz: iNotaFiscal;
+
+    function EnviarNotaSefazSemEmail: iNotaFiscal;
+    function GerarNotaPedido(Codigo: Integer): iNotaFiscal;
   end;
 
 implementation

@@ -1,0 +1,34 @@
+unit untMainControlInterfacesCleanCode;
+
+interface
+
+type
+
+  iCommand = interface
+    ['{3BB0FF5C-1AC8-4112-86C2-DAA3E857341B}']
+    function Executer: iCommand;
+  end;
+
+  iInvoker = interface
+    ['{097E4D82-3C36-4489-B48B-F98C800D6666}']
+    function Add(Value: iCommand): iInvoker;
+    function Execute : iInvoker;
+  end;
+
+  iNotaFiscal = interface
+    ['{691DB52A-77A4-4DB9-8924-5164F89BC1C3}']
+    function Criar: iNotaFiscal;
+    function Validar: iNotaFiscal;
+    function Enviar: iNotaFiscal;
+    function Gravar: iNotaFiscal;
+    function Email: iNotaFiscal;
+  end;
+
+  iNotaFiscalView = interface
+    ['{5B4F5AAA-E610-48DD-B118-9BF2B0CBA830}']
+    function EnviarNotaSefaz: iNotaFiscal;
+  end;
+
+implementation
+
+end.

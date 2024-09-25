@@ -1,0 +1,47 @@
+unit untMainControlCleanCode.ImportarPedido;
+
+
+interface
+
+uses
+  untMainControlInterfacesCleanCode;
+
+type
+  TControllerNotaFiscalImportarPedido = class(TInterfacedObject, iCommand)
+  private
+    FNumPedido: Integer;
+    FParent: iNotaFiscal;
+  public
+    Constructor Create(Parent: iNotaFiscal; FNumPedido : Integer);
+    destructor Destroy; override;
+    class function New(Parent: iNotaFiscal; FNumPedido : Integer): iCommand;
+    function Executer: iCommand;
+  end;
+
+implementation
+
+{ TControllerNotaFiscalCriar }
+
+constructor TControllerNotaFiscalImportarPedido.Create(Parent: iNotaFiscal; FNumPedido : Integer);
+begin
+  FParent := Parent;
+end;
+
+destructor TControllerNotaFiscalImportarPedido.Destroy;
+begin
+
+  inherited;
+end;
+
+function TControllerNotaFiscalImportarPedido.Executer: iCommand;
+begin
+  Result := self;
+  FParent.ImportarPedido(FNumPedido);
+end;
+
+class function TControllerNotaFiscalImportarPedido.New(Parent: iNotaFiscal; FNumPedido : Integer): iCommand;
+begin
+ Result := self.Create(Parent, FNumPedido );
+end;
+
+end.

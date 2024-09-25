@@ -12,7 +12,8 @@ uses
   untMainControlCleanCode.Gravar in '..\src\control\untMainControlCleanCode.Gravar.pas',
   untMainControlCleanCode.Email in '..\src\control\untMainControlCleanCode.Email.pas',
   untMainControlCleanCode.EnviarNotaSefaz in '..\src\control\untMainControlCleanCode.EnviarNotaSefaz.pas',
-  untMainControlInvokerCleanCode in '..\src\control\untMainControlInvokerCleanCode.pas';
+  untMainControlInvokerCleanCode in '..\src\control\untMainControlInvokerCleanCode.pas',
+  untMainControlCleanCode.ImportarPedido in '..\src\control\untMainControlCleanCode.ImportarPedido.pas';
 
 {$R *.res}
 
